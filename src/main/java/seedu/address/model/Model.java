@@ -226,6 +226,10 @@ public interface Model {
 
     public void undoOrder();
 
+    public void sortOrderItemByName();
+
+    public void sortOrderItemByPrice();
+
     /**
      * Updates the filter of the filtered orderItem list at the
      * corresponding index to filter by the given {@code predicate}.

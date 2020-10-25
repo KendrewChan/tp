@@ -284,6 +284,16 @@ public class ModelManager implements Model {
         orderManager.undoChanges();
     }
 
+    @Override
+    public void sortOrderItemByName() {
+        orderManager.sortOrderItemByName();
+    }
+
+    @Override
+    public void sortOrderItemByPrice() {
+        orderManager.sortOrderItemByPrice();
+    }
+
     //=========== Filtered Vendor List Accessors =============================================================
 
     /**

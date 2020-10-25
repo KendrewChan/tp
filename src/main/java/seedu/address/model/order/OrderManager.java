@@ -128,6 +128,14 @@ public class OrderManager implements ReadOnlyOrderManager {
         return orderHistory.size();
     }
 
+    public void sortOrderItemByName() {
+        order.sortOrderItemByName();
+    }
+
+    public void sortOrderItemByPrice() {
+        order.sortOrderItemByPrice();
+    }
+
     //// util methods
 
     @Override

@@ -3,6 +3,7 @@ package seedu.address.model.order;
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -123,6 +124,14 @@ public class Order implements Iterable<OrderItem> {
             throw new DuplicateOrderItemException();
         }
         internalList.setAll(orderItems);
+    }
+
+    public void sortOrderItemByName() {
+        internalList.sort(Comparator.comparing(OrderItem::getName));
+    }
+
+    public void sortOrderItemByPrice() {
+        internalList.sort(Comparator.comparing(OrderItem::getQuantity));
     }
 
     public double getTotal() {

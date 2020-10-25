@@ -9,6 +9,8 @@ public class SortCommand extends Command {
 
     @Override
     public CommandResult execute(Model model) throws CommandException {
+        // model.sortOrderItemByName();
+        // model.sortOrderItemByPrice();
         return null;
     }
 }
